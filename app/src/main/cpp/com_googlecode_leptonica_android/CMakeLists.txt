@@ -66,7 +66,7 @@ endif()
 
 SET(CMAKE_C_FLAGS "-D__ANDROID_API__=17 -DHAVE_CONFIG_H -DHAVE_JNIGRAPHICS")
 
-file(GLOB lept_src ../leptonica-1.69/src)
+file(GLOB lept_src ../leptonica-1.66/src)
 
 add_library( # Sets the name of the library.
              lept
@@ -97,27 +97,21 @@ add_library( # Sets the name of the library.
              ${lept_src}/boxfunc1.c
              ${lept_src}/boxfunc2.c
              ${lept_src}/boxfunc3.c
-             ${lept_src}/boxfunc4.c
-             ${lept_src}/bytearray.c
              ${lept_src}/ccbord.c
              ${lept_src}/ccthin.c
              ${lept_src}/classapp.c
              ${lept_src}/colorcontent.c
-             ${lept_src}/coloring.c
              ${lept_src}/colormap.c
              ${lept_src}/colormorph.c
              ${lept_src}/colorquant1.c
              ${lept_src}/colorquant2.c
              ${lept_src}/colorseg.c
-             ${lept_src}/colorspace.c
              ${lept_src}/compare.c
              ${lept_src}/conncomp.c
-             ${lept_src}/convertfiles.c
              ${lept_src}/convolve.c
              ${lept_src}/convolvelow.c
              ${lept_src}/correlscore.c
              ${lept_src}/dewarp.c
-             ${lept_src}/dnabasic.c
              ${lept_src}/dwacomb.2.c
              ${lept_src}/dwacomblow.2.c
              ${lept_src}/edge.c
@@ -146,8 +140,6 @@ add_library( # Sets the name of the library.
              ${lept_src}/jpegio.c
              ${lept_src}/jpegiostub.c
              ${lept_src}/kernel.c
-             ${lept_src}/leptwin.c
-             ${lept_src}/libversions.c
              ${lept_src}/list.c
              ${lept_src}/maze.c
              ${lept_src}/morph.c
@@ -161,8 +153,6 @@ add_library( # Sets the name of the library.
              ${lept_src}/paintcmap.c
              ${lept_src}/parseprotos.c
              ${lept_src}/partition.c
-             ${lept_src}/pdfio.c
-             ${lept_src}/pdfiostub.c
              ${lept_src}/pix1.c
              ${lept_src}/pix2.c
              ${lept_src}/pix3.c
@@ -189,7 +179,6 @@ add_library( # Sets the name of the library.
              ${lept_src}/ptabasic.c
              ${lept_src}/ptafunc1.c
              ${lept_src}/ptra.c
-             ${lept_src}/quadtree.c
              ${lept_src}/queue.c
              ${lept_src}/rank.c
              ${lept_src}/readbarcode.c
@@ -217,7 +206,6 @@ add_library( # Sets the name of the library.
              ${lept_src}/skew.c
              ${lept_src}/spixio.c
              ${lept_src}/stack.c
-             ${lept_src}/sudoku.c
              ${lept_src}/textops.c
              ${lept_src}/tiffio.c
              ${lept_src}/tiffiostub.c
@@ -225,8 +213,6 @@ add_library( # Sets the name of the library.
              ${lept_src}/viewfiles.c
              ${lept_src}/warper.c
              ${lept_src}/watershed.c
-             ${lept_src}/webpio.c
-             ${lept_src}/webpiostub.c
              ${lept_src}/writefile.c
              ${lept_src}/zlibmem.c
              ${lept_src}/zlibmemstub.c

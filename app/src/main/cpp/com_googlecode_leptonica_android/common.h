@@ -21,6 +21,7 @@
 #include <android/log.h>
 #include <assert.h>
 #include <allheaders.h>
+#include <stdlib.h>
 
 #define LOG_TAG "Leptonica(native)"
 #define LOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, __VA_ARGS__)

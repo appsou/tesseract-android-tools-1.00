@@ -262,7 +262,7 @@ include_directories(${tesseract_src}/textord/)
 include_directories(${tesseract_src}/wordrec/)
 include_directories(${tesseract_src}/ccmain/)
 include_directories(${tesseract_src}/api/)
-include_directories(../leptonica-1.69/src/)
+include_directories(../leptonica-1.66/src/)
 include_directories(./)
 
 target_link_libraries( # Specifies the target library.
