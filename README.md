@@ -8,3 +8,5 @@ http://www.ijg.org/files/jpegsr6b.zip
 https://codeload.github.com/DanBloomberg/leptonica/zip/v1.69
 
 https://codeload.github.com/tesseract-ocr/tesseract/zip/3.00
+
+https://android.googlesource.com/platform/external/jpeg/+/android-4.2_r1/jconfig.h
