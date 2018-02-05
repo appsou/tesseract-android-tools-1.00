@@ -26,14 +26,14 @@ LOCAL_LDLIBS := \
 
 # missing stdio functions
 
-ifneq ($(TARGET_SIMULATOR),true)
-LOCAL_SRC_FILES += \
-  $(REAL_LOCAL_PATH)/stdio/open_memstream.c \
-  $(REAL_LOCAL_PATH)/stdio/fopencookie.c \
-  $(REAL_LOCAL_PATH)/stdio/fmemopen.c
-LOCAL_C_INCLUDES += \
-  $(REAL_LOCAL_PATH)/stdio
-endif
+#ifneq ($(TARGET_SIMULATOR),true)
+#LOCAL_SRC_FILES += \
+#  $(REAL_LOCAL_PATH)/stdio/open_memstream.c \
+#  $(REAL_LOCAL_PATH)/stdio/fopencookie.c \
+#  $(REAL_LOCAL_PATH)/stdio/fmemopen.c
+#LOCAL_C_INCLUDES += \
+#  $(REAL_LOCAL_PATH)/stdio
+#endif
 
 # jni
 

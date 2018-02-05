@@ -9,9 +9,9 @@
 # export LIBJPEG_PATH=<path-to-libjpeg>
 #
 # Or you can fill out and uncomment the following definitions:
-# TESSERACT_PATH := <path-to-tesseract>
-# LEPTONICA_PATH := <path-to-leptonica>
-# LIBJPEG_PATH := <path-to-libjpeg>
+TESSERACT_PATH := $(call my-dir)/tesseract-3.00
+LEPTONICA_PATH := $(call my-dir)/leptonica-1.66
+LIBJPEG_PATH := $(call my-dir)/jpeg-6b
 
 ifeq "$(TESSERACT_PATH)" ""
   $(error You must set the TESSERACT_PATH variable to the Tesseract source \
@@ -29,4 +29,4 @@ ifeq "$(LIBJPEG_PATH)" ""
 endif
 
 # Just build the Android.mk files in the subdirs
-include $(call all-subdir-makefiles) $(LIBJPEG_PATH)/Android.mk
+include $(call all-subdir-makefiles)
