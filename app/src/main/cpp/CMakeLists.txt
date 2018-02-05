@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.4.1)
+
+ADD_SUBDIRECTORY(com_googlecode_leptonica_android)
+ADD_SUBDIRECTORY(com_googlecode_tesseract_android)
