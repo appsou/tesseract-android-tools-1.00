@@ -63,6 +63,7 @@ public class TestActivity extends Activity {
             bitmap.copyPixelsToBuffer(pixels);
             api.setImage(pixels.array(), width, height, 4, 4 * width);
             Log.e("zhangyong", "api -- " + api.getUTF8Text());
+            api.end();
         } catch (Throwable e) {
             e.printStackTrace();
         }
